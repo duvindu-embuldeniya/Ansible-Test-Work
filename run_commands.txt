@@ -1,0 +1,19 @@
+update & upgrade
+
+sudoapt install python3-pip
+sudo apt install python3.12-venv
+
+python3 -m venv venv
+ssh-keygen -t rsa
+cat /home/ubuntu/.ssh/id_rsa.pub (github + manage node)
+clone_repo...
+
+source ~/venv/bin/activate
+pip install -r requirements.txt
+
+-----------------------------------------------------
+ansible -i inventory.ini -m ping all
+ansible-playbook -i inventory.ini file.yml
+ansible-galaxy role init test
+
+-----------------------------------------------------
